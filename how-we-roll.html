@@ -52,6 +52,11 @@ a:hover {
     position:sticky;
     border-radius: 30px;
 }
+.darkmode {
+        color:rgb(180, 118, 3);
+        background-color:black;
+        border-color:rgb(180, 118, 3);
+    }
 </style>
 
 </head>
@@ -61,12 +66,13 @@ a:hover {
         <a href="./index.html">Home</a>
         <a class="active" href="./how-we-roll.html">How We Roll</a>
         <a href="./hwr-report.html">HWR-Rapport</a>
+        <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
     </div>
     <div id="innhold">
 
     
     <!-- Form informasjon hentet fra https://www.w3schools.com/html/html_forms.asp (2021-09-21) -->
-        <form action="./hwr-report.html" method="POST" class="form">
+        <form action="./hwr-report.html" method="POST" class="form" id="skjema">
 
             <p>Hva er navnet ditt?</p>
             <label for="navninput">Navn</label>
@@ -175,7 +181,12 @@ a:hover {
    }
    const form = document.querySelector('form');
    form.addEventListener('submit', handleSubmit);
-
+   function darkmodetgl(){
+        let element = document.body;
+        element.classList.toggle("darkmode");
+        document.getElementById("toppknapp").classList.toggle("paa");
+        document.getElementById("skjema").classList.toggle("darkmode");
+    }
 
 </script>
 
