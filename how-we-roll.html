@@ -64,7 +64,8 @@ a:hover {
     </div>
     <div id="innhold">
 
-        
+    
+    <!-- Form informasjon hentet fra https://www.w3schools.com/html/html_forms.asp (2021-09-21) -->
         <form action="./hwr-report.html" method="POST" class="form">
 
             <p>Hva er navnet ditt?</p>
@@ -104,7 +105,7 @@ a:hover {
              <!-- belf = bestemme eller følge -->
              <p>Liker du å være den som bestemmer eller den som følger etter?</p>
              <label for="belf">Bestemme</label>
-             <input type="range" class="slider" data-value="3" id="belf" name="belf" min="1" max="10" value="5">
+             <input type="range" class="slider" data-value="4" id="belf" name="belf" min="1" max="10" value="5">
              <label for="belf">Følge</label>
              <h4 class="viv">Nåværende verdi:</h4>
              
@@ -132,6 +133,7 @@ a:hover {
 
 <script>
 
+// Har brukt https://www.w3schools.com/howto/howto_js_rangeslider.asp (2021-09-26) som utgangspunkt til denne koden. Oskar har gjort endringer ut fra tidligere kunnskap.
     let sliders = document.getElementsByClassName("slider");
     let verdi = document.getElementsByClassName("viv");
 
