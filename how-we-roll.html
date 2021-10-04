@@ -137,7 +137,7 @@ a:hover {
 
     for(i=0;i!=sliders.length;i++){
     sliders[i].oninput = function () {
-    verdi[Number(this.getAttribute('data-value'))].innerHTML = this.value;
+    verdi[Number(this.getAttribute('data-value'))].innerHTML = `Nåværende verdi:${this.value}`;
         }
     }
 
