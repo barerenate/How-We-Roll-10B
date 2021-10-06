@@ -121,11 +121,14 @@ a:hover {
              
              <!-- sn = stress nei / sj stress ja -->
              <p>Liker du å jobbe under stress?</p>
-             <input type="radio" id="sj" name="sjn">
-             <label for="sj">Ja</label>
-             <input type="radio" id="sn" name="sjn">
-             <label for="sn">Nei</label>
+             <label for="sjn">Ja</label>
+             <input type="range" class="slider" data-value="4" id="sjn" name="sjn" min="1" max="10" value="5">
+             <label for="sjn">Nei</label>
              <h4 class="viv">Nåværende verdi:</h4>
+
+             <p>Hva er din favorittfarge?</p>
+             <label for="favf">Farge</label>
+             <input type="color" name="favf" id="favf">
 
              <button type="submit">Send inn</button>
 
@@ -185,6 +188,7 @@ a:hover {
    }
    const form = document.querySelector('form');
    form.addEventListener('submit', handleSubmit);
+
    function darkmodetgl(){
         let element = document.body;
         element.classList.toggle("darkmode");
