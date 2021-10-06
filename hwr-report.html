@@ -60,7 +60,7 @@ a:hover {
 
     </div>
 
-    <canvas id="rapport" width="200" height="100">
+    <canvas id="rapport" width="200" height="260">
 
 
     </canvas>
@@ -70,7 +70,7 @@ a:hover {
     var canvas = document.getElementById("rapport");
     var context = canvas.getContext("2d");
 
-    fetch("https://bacit.info/hwr/20211006164027-7ef4f1eb9352acddc8fc177a94bf06c5.json")
+    fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.json")
     .then(response => response.json())
     .then(data => {
         console.log(data);
@@ -81,24 +81,43 @@ a:hover {
 
       context.font = '20px serif';
       context.fillText('dorn', 30, 24);
-      context.fillText('gela', 30, 74);
+      context.fillText('gela', 30, 54);
+      context.fillText('dielfy', 20, 84);
+      context.fillText('telp', 30, 114);
+      context.fillText('belf', 30, 144);
+      context.fillText('sjn', 30, 174);
 
       context.beginPath();
       context.moveTo(70,20);
       context.lineTo(170,20);
 
       //context.beginPath();
-      context.moveTo(70,70);
-      context.lineTo(170,70);
+      context.moveTo(70,50);
+      context.lineTo(170,50);
       context.stroke();
 
+      context.moveTo(70,80);
+      context.lineTo(170,80);
+      context.stroke();
+
+      context.moveTo(70,110);
+      context.lineTo(170,110);
+      context.stroke();
+
+      context.moveTo(70,140);
+      context.lineTo(170,140);
+      context.stroke();
+
+      context.moveTo(70,170);
+      context.lineTo(170,170);
+      context.stroke();
 
       var X = 70 + parseInt(data.dorn, 10)*10;
       var Y = 20;
       var R = 5;
       context.beginPath();
       context.arc(X, Y, R, 0, 2*Math.PI, false);
-      context.fillStyle = "lightgreen";
+      context.fillStyle = data.favf;
       context.fill();
       context.lineWidth = 1;
       context.strokeStyle = "black";
@@ -106,16 +125,60 @@ a:hover {
       //context.closePath();
 
       var X = 70 + parseInt(data.gela, 10)*10;
-      var Y = 70;
+      var Y = 50;
       var R = 5;
       context.beginPath();
       context.arc(X, Y, R, 0, 2*Math.PI, false);
-      context.fillStyle = "red";
+      context.fillStyle = data.favf;
       context.fill();
       context.lineWidth = 1;
       context.strokeStyle = "black";
       context.stroke();
 
+      var X = 70 + parseInt(data.dielfy, 10)*10;
+      var Y = 80;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+      //context.closePath();
+
+      var X = 70 + parseInt(data.telp, 10)*10;
+      var Y = 110;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.belf, 10)*10;
+      var Y = 140;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.sjn, 10)*10;
+      var Y = 170;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
     });
 
 
