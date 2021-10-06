@@ -74,8 +74,7 @@ a:hover {
     .then(response => response.json())
     .then(data => {
         console.log(data);
-      document.querySelector("#debug").innerText = data.gela + " " + data
-      .dorn + " ";
+
 
       var canvas = document.getElementById('rapport');
       var context = canvas.getContext('2d');
@@ -94,7 +93,7 @@ a:hover {
       context.stroke();
 
 
-      var X = 70 + parseInt(data.dorn, 10);
+      var X = 70 + parseInt(data.dorn, 10)*10;
       var Y = 20;
       var R = 5;
       context.beginPath();
@@ -106,7 +105,7 @@ a:hover {
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.gela, 10);
+      var X = 70 + parseInt(data.gela, 10)*10;
       var Y = 70;
       var R = 5;
       context.beginPath();
