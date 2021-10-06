@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://www.clipartmax.com/png/middle/322-3225702_happy-potato.png" type="image/png">
+
 <style>
 
 html {
@@ -40,6 +40,10 @@ a:hover {
         background-color:black;
         border-color:rgb(180, 118, 3);
     }
+#debug {
+    font-family: helvetica;
+}
+
 </style>
 
 </head>
@@ -51,24 +55,73 @@ a:hover {
         <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
     </div>
 
-    <canvas id="rapCanvas">
+    <div id="debug">
+
+
+    </div>
+
+    <canvas id="rapport" width="200" height="100">
 
 
     </canvas>
-
-    <script>
-
-        var canvas = document.getElementById(rapCanvas);
-        var ctx = canvas.getContext("2d");
-
-
-        fetch('https://bacit.info/hwr/20210926134925-47352fbdecddd9a754001f4e4abbf40f.json')
-        .then(response => response.json())
-        .then(data => console.log(data));
     
-        fetch('https://bacit.info/hwr/20210926162029-a89356bb617d3bbf870649c08570427e.json')
-        .then(response => response.json())
-        .then(data => console.log(data));
+    
+    <script>
+    var canvas = document.getElementById("rapport");
+    var context = canvas.getContext("2d");
+
+    fetch("https://bacit.info/hwr/20211006164027-7ef4f1eb9352acddc8fc177a94bf06c5.json")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+      document.querySelector("#debug").innerText = data.gela + " " + data
+      .dorn + " ";
+
+      var canvas = document.getElementById('rapport');
+      var context = canvas.getContext('2d');
+
+      context.font = '20px serif';
+      context.fillText('dorn', 30, 24);
+      context.fillText('gela', 30, 74);
+
+      context.beginPath();
+      context.moveTo(70,20);
+      context.lineTo(170,20);
+
+      //context.beginPath();
+      context.moveTo(70,70);
+      context.lineTo(170,70);
+      context.stroke();
+
+
+      var X = 70 + parseInt(data.dorn, 10);
+      var Y = 20;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = "lightgreen";
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+      //context.closePath();
+
+      var X = 70 + parseInt(data.gela, 10);
+      var Y = 70;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = "red";
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+    });
+
+
+       
+        
         function darkmodetgl(){
         let element = document.body;
         let elements = document.getElementsByClassName("vk");
@@ -77,7 +130,7 @@ a:hover {
             i.classList.toggle("darkmode");
         }
         document.getElementById("toppknapp").classList.toggle("paa");
-    }
+         }
       </script>
 </body>
 </html>
