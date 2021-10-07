@@ -91,7 +91,7 @@ fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.js
       oskar.style.border = `5px ${data.favf} double`;
 
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -99,9 +99,27 @@ fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -112,12 +130,12 @@ fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -159,7 +177,7 @@ fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -170,7 +188,7 @@ fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
@@ -205,9 +223,8 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       var context = canvas.getContext('2d');
 
       ludwig.style.border = `5px ${data.favf} double`;
-
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -215,9 +232,27 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -228,12 +263,12 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -275,7 +310,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -286,7 +321,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
@@ -306,7 +341,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fill();
       context.lineWidth = 1;
       context.strokeStyle = "black";
-      context.stroke();
+      context.stroke(); 
     });
 
     fetch("https://bacit.info/hwr/20211007122816-eee9e4be45f538b24e360afd3e75f038.json")
@@ -319,9 +354,8 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       var context = canvas.getContext('2d');
 
       renate.style.border = `5px ${data.favf} double`;
-
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -329,9 +363,27 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -342,12 +394,12 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -389,7 +441,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -400,7 +452,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
@@ -433,9 +485,8 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       var context = canvas.getContext('2d');
 
       marius.style.border = `5px ${data.favf} double`;
-
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -443,9 +494,27 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -456,12 +525,12 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -503,7 +572,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -514,7 +583,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
@@ -547,9 +616,8 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       var context = canvas.getContext('2d');
 
       cecilie.style.border = `5px ${data.favf} double`;
-
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -557,9 +625,27 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -570,12 +656,12 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -617,7 +703,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -628,7 +714,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
@@ -661,9 +747,8 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       var context = canvas.getContext('2d');
 
       einar.style.border = `5px ${data.favf} double`;
-
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -671,9 +756,27 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -684,12 +787,12 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -731,7 +834,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -742,7 +845,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
@@ -775,9 +878,8 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       var context = canvas.getContext('2d');
 
       ulrik.style.border = `5px ${data.favf} double`;
-
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -785,9 +887,27 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -798,12 +918,12 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -845,7 +965,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -856,7 +976,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
@@ -889,9 +1009,8 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       var context = canvas.getContext('2d');
 
       erland.style.border = `5px ${data.favf} double`;
-
       context.font = '20px serif';
-      context.fillText(data.navn, 30, 24);
+      context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
       context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
@@ -899,9 +1018,27 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.fillText('Bestemme eller følge?', 30, 300);
       context.fillText('Liker du å jobbe under stress?', 30, 360);
 
+      context.fillText("Alene",20, 84);
+      context.fillText("I gruppe",180, 84);
+
+      context.fillText("A",50, 144);
+      context.fillText("B",180, 144);
+
+      context.fillText("Digitalt",5, 204);
+      context.fillText("Fysisk",180, 204);
+
+      context.fillText("Teoretisk",10, 264);
+      context.fillText("Praktisk",190, 264);
+
+      context.fillText("Bestemme",5, 324);
+      context.fillText("Følge",200, 324);
+
+      context.fillText("Ja",50, 384);
+      context.fillText("Nei",175, 384);
+
       context.beginPath();
       context.moveTo(70,80);
-      context.lineTo(170,80);
+      context.lineTo(170,80); 
 
       //context.beginPath();
       context.moveTo(70,140);
@@ -912,12 +1049,12 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.lineTo(170,200);
       context.stroke();
 
-      context.moveTo(70,260);
-      context.lineTo(170,260);
+      context.moveTo(90,260);
+      context.lineTo(190,260);
       context.stroke();
 
-      context.moveTo(70,320);
-      context.lineTo(170,320);
+      context.moveTo(90,320);
+      context.lineTo(190,320);
       context.stroke();
 
       context.moveTo(70,380);
@@ -959,7 +1096,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
       //context.closePath();
 
-      var X = 70 + parseInt(data.telp, 10)*10;
+      var X = 90 + parseInt(data.telp, 10)*10;
       var Y = 260;
       var R = 5;
       context.beginPath();
@@ -970,7 +1107,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.strokeStyle = "black";
       context.stroke();
 
-      var X = 70 + parseInt(data.belf, 10)*10;
+      var X = 90 + parseInt(data.belf, 10)*10;
       var Y = 320;
       var R = 5;
       context.beginPath();
