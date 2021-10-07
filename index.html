@@ -21,6 +21,21 @@ a {
         background: none;
     }
 
+.darkmode {
+    color:rgb(180, 118, 3);
+    background-color:black;
+    border-color:rgb(180, 118, 3);
+}
+
+a {
+    margin-right:30px;
+    padding:10px;
+    text-decoration: none;
+    color: #d9d9d9;
+    font-family: Helvetica;
+    font-weight: bold;
+    background: none;
+}
 a:hover {
         color: rgb(255, 102, 0);
     }
@@ -125,7 +140,6 @@ a:hover {
     position: relative;
     border-radius: 15px;
 
-}
 .paa {
         color:green;
     }
@@ -135,12 +149,39 @@ a:hover {
         border-color:rgb(0, 0, 0);
     }
 
+.nav {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(82,82,82,1) 100%);
+    padding: 20px;
+    position:sticky;
+    border-radius: 30px;
+}
+
+.active{
+    color:rgb(255, 102, 0);
+}
+
+.vk {
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+    border: 2px solid black;
+    float: left;
+    position: relative;
+}
+
+.paa {
+    color:green;
+}
 
 </style>
-
 </head>
+
+
 <body>
-    <div class="nav">
+    
+<div class="nav">
         <a class="active" href="./index.html">Home</a>
         <a href="./how-we-roll.html">How We Roll</a>
         <a href="./hwr-report.html">HWR-Rapport</a>
@@ -193,5 +234,6 @@ a:hover {
         document.getElementById("toppknapp").classList.toggle("paa");
     }
 </script>
+
 </body>
 </html>
