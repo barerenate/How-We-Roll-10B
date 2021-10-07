@@ -50,104 +50,37 @@ a:hover {
 .active{
         color:rgb(255, 102, 0);
     }
-.vk1 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+    
+#boks1{
     background-color: aquamarine;
-    float: left;
-    position: relative;
-    border-radius: 15px;
-
-
 }
-.vk2 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+#boks2{
     background-color: rgb(122, 227, 69);
-    float: left;
-    position: relative;
-    border-radius: 15px;
-
-}.vk3 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+}
+#boks3{
     background-color: rgb(146, 124, 227);
-    float: left;
-    position: relative;
-    border-radius: 15px;
+}
 
-}.vk4 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+#boks4{
     background-color: rgb(255, 127, 238);
-    float: left;
-    position: relative;
-    border-radius: 15px;
-
-}.vk5 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+}
+#boks5{
     background-color: rgb(209, 40, 40);
-    float: left;
-    position: relative;
-    border-radius: 15px;
-
-}.vk6 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+}
+#boks6{
     background-color: rgb(247, 212, 10);
-    float: left;
-    position: relative;
-    border-radius: 15px;
+}
 
-}.vk7 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+#boks7{
     background-color: rgb(162, 126, 167);
-    float: left;
-    position: relative;
-    border-radius: 15px;
+}
 
-}.vk8 {
-    width: 400px;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    border: 2px solid gainsboro;
+#boks8 {
     background-color: rgb(4, 157, 106);
-    float: left;
-    position: relative;
-    border-radius: 15px;
 }
 .paa {
         color:green;
-    }
-.darkmode {
-        color:rgb(0, 0, 0);
-        background-color:rgb(19, 19, 19);
-        border-color:rgb(0, 0, 0);
-    }
+}
 
 .nav {
     overflow: hidden;
@@ -166,10 +99,16 @@ a:hover {
     height: 200px;
     margin: 50px;
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid gainsboro;
+    border-radius:15px;
     float: left;
     position: relative;
 }
+.darkmode {
+        color:orange;
+        background-color:rgb(19, 19, 19);
+        border-color:orange;
+    }
 
 .paa {
     color:green;
@@ -188,35 +127,35 @@ a:hover {
         <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
 </div>
 
-    <div class="vk1"><b>Ludwig</b> <br><b>Høie Larsen</b>
+    <div class="vk" id="boks1"><b>Ludwig</b> <br><b>Høie Larsen</b>
     <p>IT og Informasjonssystemer, bachelor. <br>Interesser: Tegning, spill, design og planter.</p>
     <img src="Ludwig.jpg" style="height: 100px; width: auto"> </div>
 
-    <div class="vk2"><b>Cecilie</b> <br><b>Hansen</b>
+    <div class="vk" id="boks2"><b>Cecilie</b> <br><b>Hansen</b>
     <p>IT og Informasjonssystemer, årsstudium. <br>Interesser: Design, markedsføring og strikking. </p>
     <img src="Cecilie.jpg" style="width: auto; height: 100px"> </div>
 
-    <div class="vk3"><b>Renate</b> <br><b>Westermann</b>
+    <div class="vk" id="boks3"><b>Renate</b> <br><b>Westermann</b>
     <p>IT og Informasjonssystemer, bachelor. <br>Interesser: Maling, dataspill og film. </p>
     <img src="renate.jpg" alt="Reante" style="width: auto; height: 100px"></div>
 
-    <div class="vk4"><b>Ulrik</b> <br><b>Karlstrøm</b>
+    <div class="vk" id="boks4"><b>Ulrik</b> <br><b>Karlstrøm</b>
     <p>IT og Informasjonssystemer, årsstudium. <br>Interesser: Idrett, musikk, teknologi og design. </p>
     <img src="Tottenhamsuger.jpg" style="width: auto; height: 100px"> </div>
 
-    <div class="vk5"><b>Marius</b> <br><b>Mydland</b>
+    <div class="vk" id="boks5"><b>Marius</b> <br><b>Mydland</b>
     <p>IT og Informasjonssystemer, bachelor. <br>Interesser: PC, gaming og trening. </p>
     <img src="Marius.jpg" style="height: 100px; width: auto"> </div>
 
-    <div class="vk6"><b>Einar Rune</b> <br><b>Dalaker Opsahl</b>
+    <div class="vk" id="boks6"><b>Einar Rune</b> <br><b>Dalaker Opsahl</b>
     <p>IT og Informasjonssystemer, årsstudium. <br>Interesser: Idrett og folk. </p>
     <img src="Einarrune.jpg" style="width: auto; height: 100px"> </div>
 
-    <div class="vk7"><b>Erland</b> <br><b>Lie Bjørneberg</b>
+    <div class="vk" id="boks7"><b>Erland</b> <br><b>Lie Bjørneberg</b>
     <p>IT og Informasjonssystemer, årsstudium. <br>Interesser: Idrett, mat, gaming og reising. </p>
     <img src="Erland.jpg" style="height: 100px; width: auto"> </div>
 
-    <div class="vk8"><b>Oskar</b> <br><b>Hauge Thomassen</b>
+    <div class="vk" id="boks8"><b>Oskar</b> <br><b>Hauge Thomassen</b>
     <p>IT og Informasjonssystemer, bachelor.<br>Interesser: Programmering og gaming. </p>
     <img src="oskar.jpg" style="width: auto; height: 100px"> </div>
  <!-- https://www.w3schools.com/html/html_images.asp -->
