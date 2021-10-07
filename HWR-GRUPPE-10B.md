@@ -1,4 +1,4 @@
-Gruppe 10B, gruppearbeid rundt hwr
+Gruppe 10B, How We Roll prosjekt
 
 Vi i 10B er en gruppe på totalt 8 medlemmer og organiserte oss  derfor i grupper på 4, store deler av arbeidet. Gruppe 1 hadde ansvar for index-fil og gruppe 2 hadde ansvar for hwr- og rapport-fil. Gruppe 2 hadde ansvaret for to av html filene fordi det var en på denne gruppen som kunne noe koding fra før. Gruppene har jobbet sammen både fysisk på skolen/teateret og digitalt over discord, i tillegg har hvert av gruppemedlemmene jobbet noe individuelt for å ha muligheten til å lære på egenhånd også. Gruppene jobbet både sammen og selvstendig slik at man både kunne lære av hverandre men også teste ut og lære ting selv. Gruppen har delt ressurs-linker i en felles discord chat og gitt individuelle oppgaver underveis, for at alle fikk lært det mest grunnleggende av html og css.
 
