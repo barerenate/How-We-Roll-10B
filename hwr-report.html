@@ -77,8 +77,13 @@ a:hover {
 
     
     
-    <script>
+  <script>
 
+/* tatt fra https://github.com/digitnow/how-we-roll/blob/test-fetch/examples/report-canvas.html 
+    fjernet: document.querySelector("#debug").innerText = data.data01 + " " + data
+    .dorn + " " + data.cora; og div debug siden de ikke hadde noen funksjon for oss.*/
+
+// Oskar resultat
 fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.json")
     .then(response => response.json())
     .then(data => {
@@ -194,7 +199,7 @@ fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.js
     });
 
 
-            // Ludwig rapport boks
+// Ludwig rapport boks
 fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.json")
     .then(response => response.json())
     .then(data => {
@@ -309,6 +314,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
     });
 
+// Renate resultat
     fetch("https://bacit.info/hwr/20211007122816-eee9e4be45f538b24e360afd3e75f038.json")
     .then(response => response.json())
     .then(data => {
@@ -423,6 +429,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
     });
 
+// Marius resultat
     fetch("https://bacit.info/hwr/20211007122648-8d6b80ed78d20e8ecdee712b263a4206.json")
     .then(response => response.json())
     .then(data => {
@@ -537,6 +544,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
     });
 
+// Cecilie resultat
     fetch("https://bacit.info/hwr/20211007124940-4522b1e0ac79042c46a062405c3bbb2d.json")
     .then(response => response.json())
     .then(data => {
@@ -651,6 +659,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
     });
 
+// Einar resultat
     fetch("https://bacit.info/hwr/20211007122757-4d51bca15f5f4ad6d1bfb8652bde353b.json")
     .then(response => response.json())
     .then(data => {
@@ -765,6 +774,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
     });
 
+// Ulrik resultat
     fetch("https://bacit.info/hwr/20211007124651-92b31849edb0410570ac15c4cd41117a.json")
     .then(response => response.json())
     .then(data => {
@@ -879,6 +889,7 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
       context.stroke();
     });
 
+// Erland resultat
     fetch("https://bacit.info/hwr/20211007122816-eee9e4be45f538b24e360afd3e75f038.json")
     .then(response => response.json())
     .then(data => {
@@ -994,15 +1005,16 @@ fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.js
     });
        
         
-        function darkmodetgl(){
-        let element = document.body;
-        let elements = document.getElementsByClassName("vk");
-        element.classList.toggle("darkmode");
-        for(i of elements) {
-            i.classList.toggle("darkmode");
-        }
-        document.getElementById("toppknapp").classList.toggle("paa");
-         }
-      </script>
+  function darkmodetgl(){
+  let element = document.body;
+  let elements = document.getElementsByClassName("vk");
+  element.classList.toggle("darkmode");
+  for(i of elements) {
+        i.classList.toggle("darkmode");
+      }
+  document.getElementById("toppknapp").classList.toggle("paa");
+      }
+  </script>
+
 </body>
 </html>
