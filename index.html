@@ -11,15 +11,10 @@
 html {
         font-family: Helvetica;
     }
-a {
-        margin-right:30px;
-        padding:10px;
-        text-decoration: none;
-        color: #d9d9d9;
-        font-family: Helvetica;
-        font-weight: bold;
-        background: none;
-    }
+
+body{
+    margin:0px;
+}
 
 .darkmode {
     color:rgb(180, 118, 3);
@@ -83,12 +78,14 @@ a:hover {
         color:green;
 }
 
+/* https://cssgradient.io/ <-- for preview og generering av gradient brukt i nav bar */
 .nav {
     overflow: hidden;
     background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(82,82,82,1) 100%);
     padding: 20px;
     position:sticky;
     border-radius: 30px;
+    margin: 8px 8px 8px 8px;
 }
 
 .active{
@@ -106,17 +103,20 @@ a:hover {
     position: relative;
 }
 .darkmode {
-        color:rgb(230, 152, 7) !important;
-        background-color:rgb(19, 19, 19) !important;
-        border-color:rgb(230, 152, 7) !important;
+    color:rgb(255, 102, 0) !important;
+        background-color:rgb(43, 43, 43) !important;
+        border-color:rgb(255, 102, 0) !important;
     }
 
 .paa {
     color:green;
 }
+
+/* https://www.w3schools.com/css/css3_object-fit.asp <-- så bildene ikke blir strekt feil */
 img {
     height:75px;
     width:75px;
+    object-fit: cover;
     border-radius: 35px;
     box-shadow: 1px 1px 5px 2px black;
 }
@@ -129,9 +129,19 @@ b {
     font-size: 20px;
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(28,28,28);
+  color: #d9d9d9;
+  font-family: Helvetica;
+  font-weight: bold;
+  border-top: groove;
+  margin-top: 5vw;
+}
+
 </style>
 </head>
-
 
 <body>
     
@@ -175,6 +185,9 @@ b {
     </div>
  <!-- https://www.w3schools.com/html/html_images.asp -->
 
+    <footer>
+    <p> Gruppe 10B </p>
+    </footer>
 
 
 <script>
