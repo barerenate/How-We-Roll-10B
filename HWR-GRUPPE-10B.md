@@ -7,6 +7,7 @@ Vi har tatt i bruk forskjellige IDEs, noen har brukt IntelliJ og noen har brukt 
 Vi hadde ikke satt noen regler for bruk av hoved-repository. Vi ville at alle skulle kunne eksprimentere med funksjonene i github, kunne legge til punkter i kanban-bord, lage branches, lære seg å merge og fikse konflikter, så vi følte det beste var å bare la alle gjøre som de ville. Vi følte at det ikke var nødvendig siden dette ikke er et veldig stort prosjekt. Vi kunne med fordel ha satt noen regler for å ha litt mer struktur og danne gode vaner, men det kan vi fokusere på under neste prosjekt, når alle har lært seg grunnleggende funksjoner. 
 
 
+![WebMock](https://user-images.githubusercontent.com/89196237/136400420-d38ab8d2-cbc2-4dc5-9579-dd6a12ec2811.png)
 
 
 Om PDF-fil som leveres i Canvas: HWR-GRUPPE<gruppe-id>.pdf
