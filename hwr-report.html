@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://www.clipartmax.com/png/middle/322-3225702_happy-potato.png" type="image/png">
+
 <style>
+
 
 html {
     font-family: Helvetica;
@@ -33,13 +34,25 @@ a:hover {
     background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(82,82,82,1) 100%);
     padding: 20px;
     position:sticky;
-     border-radius: 30px;
+    border-radius: 30px;
+    border-style: groove;
 }
 .darkmode {
         color:rgb(180, 118, 3);
         background-color:black;
         border-color:rgb(180, 118, 3);
     }
+#debug {
+    font-family: helvetica;
+}
+
+#ludwig{
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 5vw;
+    margin-top: 100px;
+}
+
 </style>
 
 </head>
@@ -51,24 +64,255 @@ a:hover {
         <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
     </div>
 
-    <canvas id="rapCanvas">
+    <div id="debug">
 
 
-    </canvas>
+    </div>
 
-    <script>
+    <canvas id="rapport" width="400" height="440"> </canvas>
 
-        var canvas = document.getElementById(rapCanvas);
-        var ctx = canvas.getContext("2d");
+    <canvas id="ludwig" width="400" height="440"> </canvas>
 
-
-        fetch('https://bacit.info/hwr/20210926134925-47352fbdecddd9a754001f4e4abbf40f.json')
-        .then(response => response.json())
-        .then(data => console.log(data));
     
-        fetch('https://bacit.info/hwr/20210926162029-a89356bb617d3bbf870649c08570427e.json')
-        .then(response => response.json())
-        .then(data => console.log(data));
+    
+    <script>
+    var canvas = document.getElementById("rapport");
+    var context = canvas.getContext("2d");
+
+    fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.json")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+
+
+      var canvas = document.getElementById('rapport');
+      var context = canvas.getContext('2d');
+
+      rapport.style.border = `5px ${data.favf} double`;
+
+      context.font = '20px serif';
+      context.fillText(data.navn, 75, 24);
+      context.fillText('dorn', 30, 40);
+      context.fillText('gela', 30, 74);
+      context.fillText('dielfy', 20, 104);
+      context.fillText('telp', 30, 134);
+      context.fillText('belf', 30, 164);
+      context.fillText('sjn', 30, 194);
+
+      context.beginPath();
+      context.moveTo(70,40);
+      context.lineTo(170,40);
+
+      //context.beginPath();
+      context.moveTo(70,70);
+      context.lineTo(170,70);
+      context.stroke();
+
+      context.moveTo(70,100);
+      context.lineTo(170,100);
+      context.stroke();
+
+      context.moveTo(70,130);
+      context.lineTo(170,130);
+      context.stroke();
+
+      context.moveTo(70,160);
+      context.lineTo(170,160);
+      context.stroke();
+
+      context.moveTo(70,190);
+      context.lineTo(170,190);
+      context.stroke();
+
+      var X = 70 + parseInt(data.dorn, 10)*10;
+      var Y = 40;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+      //context.closePath();
+
+      var X = 70 + parseInt(data.gela, 10)*10;
+      var Y = 70;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.dielfy, 10)*10;
+      var Y = 100;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+      //context.closePath();
+
+      var X = 70 + parseInt(data.telp, 10)*10;
+      var Y = 130;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.belf, 10)*10;
+      var Y = 160;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.sjn, 10)*10;
+      var Y = 190;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+    });
+
+
+            // Ludwig rapport boks
+var canvas = document.getElementById("ludwig");
+var context = canvas.getContext("2d");
+
+fetch("https://bacit.info/hwr/20211006201056-ada44096809e246d97f02645dea832e3.json")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+
+
+      var canvas = document.getElementById('ludwig');
+      var context = canvas.getContext('2d');
+
+      ludwig.style.border = `5px ${data.favf} double`;
+
+      context.font = '20px serif';
+      context.fillText(data.navn, 30, 24);
+      context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
+      context.fillText('Er du A eller B menneske?', 30, 120);
+      context.fillText('Lærer du best digitalt eller fysisk?', 30, 180);
+      context.fillText('Lærer du best teoretisk eller praktisk?', 30, 240);
+      context.fillText('Bestemme eller følge?', 30, 300);
+      context.fillText('Liker du å jobbe under stress?', 30, 360);
+
+      context.beginPath();
+      context.moveTo(70,80);
+      context.lineTo(170,80);
+
+      //context.beginPath();
+      context.moveTo(70,140);
+      context.lineTo(170,140);
+      context.stroke();
+
+      context.moveTo(70,200);
+      context.lineTo(170,200);
+      context.stroke();
+
+      context.moveTo(70,260);
+      context.lineTo(170,260);
+      context.stroke();
+
+      context.moveTo(70,320);
+      context.lineTo(170,320);
+      context.stroke();
+
+      context.moveTo(70,380);
+      context.lineTo(170,380);
+      context.stroke();
+
+      var X = 70 + parseInt(data.dorn, 10)*10;
+      var Y = 80;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+      //context.closePath();
+
+      var X = 70 + parseInt(data.gela, 10)*10;
+      var Y = 140;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.dielfy, 10)*10;
+      var Y = 200;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+      //context.closePath();
+
+      var X = 70 + parseInt(data.telp, 10)*10;
+      var Y = 260;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.belf, 10)*10;
+      var Y = 320;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.sjn, 10)*10;
+      var Y = 380;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = data.favf;
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+    });
+       
+        
         function darkmodetgl(){
         let element = document.body;
         let elements = document.getElementsByClassName("vk");
@@ -77,7 +321,7 @@ a:hover {
             i.classList.toggle("darkmode");
         }
         document.getElementById("toppknapp").classList.toggle("paa");
-    }
+         }
       </script>
 </body>
 </html>
