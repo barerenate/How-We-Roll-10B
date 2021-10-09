@@ -10,4 +10,4 @@ Gruppen satt ingen regler for bruk av hoved-repository. Vi ønsket at alle skull
 ![WebMock](https://user-images.githubusercontent.com/89196237/136400420-d38ab8d2-cbc2-4dc5-9579-dd6a12ec2811.png)
 
 
-Jeg har også prøvd å få samlet all form dataene i en tegning i stedet for åtte. klarte ikke helt å få vist alle dataene, siden de som hadde samme verdi ble overlappet, men her er den koden, om du er interessert: [hwr-report-test.txt](https://github.com/barerenate/hwr-10b/files/7316036/hwr-report-test.txt)
+Jeg har også prøvd en alternativ måte å gjøre report siden på, hvor all form dataene er i en tegning i stedet for åtte. klarte ikke helt å få vist alle dataene, siden de som hadde samme verdi ble overlappet, valgte derfor ikke å ta det med i prosjektet. Her er den koden, om du er interessert: [hwr-report-test.txt](https://github.com/barerenate/hwr-10b/files/7316036/hwr-report-test.txt)
