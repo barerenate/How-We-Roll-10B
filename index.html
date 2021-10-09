@@ -79,13 +79,41 @@ a:hover {
 }
 
 /* https://cssgradient.io/ <-- for preview og generering av gradient brukt i nav bar */
-.nav {
+.nav { 
     overflow: hidden;
     background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(82,82,82,1) 100%);
     padding: 20px;
-    position:sticky;
     border-radius: 30px;
-    margin: 8px 8px 8px 8px;
+    border-style: groove;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top:150px;
+    width: 90vw;
+}
+
+.hd-image {
+    background-image: url("WP_bg.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.hd-text{
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hd-container{
+    position:absolute;
+    margin: 20px;
+    margin-bottom: 40px;
 }
 
 .active{
@@ -146,12 +174,20 @@ footer {
 
 <body>
     
-<div class="nav">
-        <a class="active" href="./index.html">Home</a>
-        <a href="./how-we-roll.html">How We Roll</a>
-        <a href="./hwr-report.html">HWR-Rapport</a>
-        <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
-</div>
+    <div class="hd-image">
+        <div class="hd-text">
+            <h1>Gruppe 10B</h1>
+            <p>If all else fails... Ctrl+Alt+Del</p>
+        </div>
+            <div class="hd-container">
+                <div class="nav">
+                    <a class="active" href="./index.html">Home</a>
+                    <a href="./how-we-roll.html">How We Roll</a>
+                    <a href="./hwr-report.html">HWR-Rapport</a>
+                    <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
+                </div>
+            </div>
+    </div>
 
 <div>
 

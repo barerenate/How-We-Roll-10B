@@ -38,11 +38,44 @@ a:hover {
     overflow: hidden;
     background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(82,82,82,1) 100%);
     padding: 20px;
-    position:sticky;
     border-radius: 30px;
     border-style: groove;
-    margin: 8px 8px 8px 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top:150px;
+    width: 90vw;
 }
+
+.hd-image {
+    background-image: url("WP_bg.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.hd-text{
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hd-container{
+    position:absolute;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.darkmode {
+        color:rgb(255, 102, 0);
+        background-color:rgb(43, 43, 43);
+        border-color:rgb(255, 102, 0);
+    }
+
 .darkmode {
         color:rgb(255, 102, 0);
         background-color:rgb(43, 43, 43);
@@ -51,7 +84,7 @@ a:hover {
 
 .rapport {
     background-color: rgba(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 40px 40px 40px 40px;
 }
 
@@ -71,11 +104,20 @@ footer {
 
 </head>
 <body>
-    <div class="nav">
-        <a href="./index.html">Home</a>
-        <a href="./how-we-roll.html">How We Roll</a>
-        <a class="active" href="./hwr-report.html">HWR-Rapport</a>
-        <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
+
+    <div class="hd-image">
+        <div class="hd-text">
+            <h1>Gruppe 10B</h1>
+            <p>If all else fails... Ctrl+Alt+Del</p>
+        </div>
+            <div class="hd-container">
+                <div class="nav">
+                    <a href="./index.html">Home</a>
+                    <a href="./how-we-roll.html">How We Roll</a>
+                    <a class="active" href="./hwr-report.html">HWR-Rapport</a>
+                    <button id="toppknapp" onclick="darkmodetgl()">DARKMODE</button>
+                </div>
+            </div>
     </div>
 
     <canvas class="rapport" id="oskar" width="400" height="440"> </canvas>
@@ -116,7 +158,7 @@ fetch("https://bacit.info/hwr/20211006191404-7d6cadc9446cc3fedb553ea93d885b7e.js
 
       oskar.style.border = `5px ${data.favf} double`;
 
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
@@ -249,7 +291,7 @@ fetch("https://bacit.info/hwr/20211007183810-e997b3c9b25881d8b9eda27455d5e6a0.js
       var context = canvas.getContext('2d');
 
       ludwig.style.border = `5px ${data.favf} double`;
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
@@ -381,7 +423,7 @@ fetch("https://bacit.info/hwr/20211007183810-e997b3c9b25881d8b9eda27455d5e6a0.js
       var context = canvas.getContext('2d');
 
       renate.style.border = `5px ${data.favf} double`;
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
@@ -513,7 +555,7 @@ fetch("https://bacit.info/hwr/20211007183810-e997b3c9b25881d8b9eda27455d5e6a0.js
       var context = canvas.getContext('2d');
 
       marius.style.border = `5px ${data.favf} double`;
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
@@ -645,7 +687,7 @@ fetch("https://bacit.info/hwr/20211007183810-e997b3c9b25881d8b9eda27455d5e6a0.js
       var context = canvas.getContext('2d');
 
       cecilie.style.border = `5px ${data.favf} double`;
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
@@ -777,7 +819,7 @@ fetch("https://bacit.info/hwr/20211007183810-e997b3c9b25881d8b9eda27455d5e6a0.js
       var context = canvas.getContext('2d');
 
       einar.style.border = `5px ${data.favf} double`;
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
@@ -909,7 +951,7 @@ fetch("https://bacit.info/hwr/20211007183810-e997b3c9b25881d8b9eda27455d5e6a0.js
       var context = canvas.getContext('2d');
 
       ulrik.style.border = `5px ${data.favf} double`;
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
@@ -1041,7 +1083,7 @@ fetch("https://bacit.info/hwr/20211007183810-e997b3c9b25881d8b9eda27455d5e6a0.js
       var context = canvas.getContext('2d');
 
       erland.style.border = `5px ${data.favf} double`;
-      context.font = '20px serif';
+      context.font = '17px sans-serif';
       context.fillText(data.navn, 30, 30);
       context.fillText('Liker du å jobbe alene eller i gruppe?', 30, 60);
       context.fillText('Er du A eller B menneske?', 30, 120);
