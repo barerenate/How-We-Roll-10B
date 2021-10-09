@@ -4,29 +4,10 @@ Vi i 10B er en gruppe på totalt 8 medlemmer og organiserte oss  derfor i gruppe
 
 Gruppen har tatt i bruk forskjellige IDEs, noen medlemmer har brukt IntelliJ og noen har brukt VS-code. Alle fikk bruke det programmet de selv ønsket å bruke og vi hadde ingen problemer med å bruke forskjellige plattformer. Det meste av informasjon som er brukt til utførelse av oppgaven ble hentet fra Janis sitt hwr-repository og Google. Andre sider som ble benyttet var W3schools og StackOwerflow, de forskjellige sidene har totalt vært alt av informasjon vi har trengt til å kunne fullføre dette prosjektet.
 
-Gruppen satt ingen regler for bruk av hoved-repository. Vi ønsket at alle skulle ha muligheten til å eksprimentere med funksjonene i github, legge til punkter i kanban-bord, lage branches, lære seg å merge og fikse konflikter osv. Gruppen mente derfor at det beste var å la hvert medlem gjøre som de selv ville, for å lære og feile. Gruppen kunne med fordel gjennom prosjektet satt noen faste regler for å ha bedre struktur og danne gode vaner, men dette følte vi ikke at var nødvendig denne gang på grunn av omfanget og størrelsen på oppgaven. Likevell er dette noe vi vil ta med oss videre og ha større fokus rundt under neste prosjekt, når alle har lært seg grunnleggende funksjoner og er tryggere i hva som skal gjøres.
+Gruppen satt ingen regler for bruk av hoved-repository. Vi ønsket at alle skulle ha muligheten til å eksprimentere med funksjonene i github, legge til punkter i kanban-bord, lage branches, lære seg å merge og fikse konflikter osv. Gruppen mente derfor at det beste var å la hvert medlem gjøre som de selv ville, for å lære og feile. Gruppen kunne med fordel gjennom prosjektet satt noen faste regler for å ha bedre struktur og danne gode vaner, men dette følte vi ikke at var nødvendig denne gang på grunn av omfanget og størrelsen på oppgaven. Likevel er dette noe vi vil ta med oss videre og ha større fokus rundt under neste prosjekt, når alle har lært seg grunnleggende funksjoner og er tryggere i hva som skal gjøres.
 
 
 ![WebMock](https://user-images.githubusercontent.com/89196237/136400420-d38ab8d2-cbc2-4dc5-9579-dd6a12ec2811.png)
 
 
-Om PDF-fil som leveres i Canvas: HWR-GRUPPE<gruppe-id>.pdf
-HWR-GRUPPE<gruppe-id>.md skal inneholde et sammendrag av deres arbeid med “How We
-Roll”-oppgaven. Dere skal så konsist som mulig beskrive hva dere gjorde for å besvare oppgaven. For
-eksempel, hvordan organiserte dere dere, hvordan dere tok i bruk verktøy og hva som fungerte bra,
-minde bra og dårlig? Hvilke regler dere satt for bruke av hovedrepository og hvordan fungerte disse?
-Hvordan sørget dere at alle lærer grunnleggende programmering i HTML og CSS (arbeid i par, arbeid
-med alle, individuelt arbeid osv.)?
-Detaljerte beskrivelser relatert til design av deres programmer (koding), kan dere vurdere å legge inn i
-koden. For eksempel, når dere legger inn et felt av type “text” i et form-element i en HTML5-fil, så
-kan dere kommentere at den automatiske verdien for “size” attributtet er 20:
-
-Dere må selv vurdere hvor mange og hvor lange kommentarer det er hensiktsmessig å legge inn i
-koden (før den eventuelt blir veldig vanskelig å lese). Hvis kommentarene blir veldig lange, for
-eksempel mer enn 15-20 linjer, så bør det vurderes å lage et avsnitt i Markdown-dokumentet i Github.
-Dere må generere en PDF-fil fra Markdown-dokumentet i Github og sette på en forside hvor det står
-(1) at alle har bidratt tilstrekkelig til arbeidet med oppgaven,
-(2) at alle kilder dere har brukt er det blitt referert til,
-(3) om dere tillater oss å bruke deres arbeid i undervisning i fremtiden og
-(4) hyperlenkene til deres Github hovedrepository og deres hjemmeside.
-Denne PDF-filen skal leveres i Canvas (LHWR04).
+Jeg har også prøvd å få samlet all form dataene i en tegning i stedet for åtte. klarte ikke helt å få vist alle dataene, siden de som hadde samme verdi ble overlappet, men her er den koden, om du er interessert: [hwr-report-test.txt](https://github.com/barerenate/hwr-10b/files/7316036/hwr-report-test.txt)
